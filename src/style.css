@@ -1,24 +1,83 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  #root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .container-fluid {
-    flex: 1;
-  }
+:root {
+  --primary-color: #1a73e8;       /* Azul */
+  --secondary-color: #ff6f00;     /* Naranja */
+  --accent-color: #34a853;        /* Verde */
+  --background-color: #f8f9fa;    /* Gris claro */
+  --text-color: #000000;          /* Negro */
+  --neutral-color: #808080;       /* Gris */
+}
 
-  .carousel-caption h5 {
-    color: #fff; /* Color del texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto para mayor legibilidad */
-  }
-  
-  .carousel-caption p {
-    color: #fff; /* Color del texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto para mayor legibilidad */
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  flex: 1;
+}
+
+.header, .footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 1rem;
+}
+
+.navbar-brand {
+  color: var(--background-color);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand i {
+  margin-right: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.carousel-caption h5, .carousel-caption p {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.footer a {
+  color: var(--background-color);
+}
+
+.footer a:hover {
+  color: var(--accent-color);
+}
+
+img.img-detail {
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.aside-form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}

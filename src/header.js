@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import feather from 'feather-icons';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   useEffect(() => {
@@ -7,13 +8,12 @@ const Header = () => {
   }, []);
 
   return (
-    <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header className="header">
+      <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <i data-feather="box" className="me-2"></i> {/* Cambia "box" por el ícono que elijas */}
-            CSGO.SKINS
-          </a>
+          <Link className="navbar-brand" to="/">
+            <i data-feather="box" className="me-2"></i> CSGO.SKINS
+          </Link>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <form className="d-flex">
               <input
@@ -23,11 +23,11 @@ const Header = () => {
                 aria-label="Search"
                 style={{
                   width: 'auto',
-                  backgroundColor: '#343a40',
-                  color: '#fff',
+                  backgroundColor: 'var(--neutral-color)',
+                  color: 'var(--background-color)',
                 }}
               />
-              <button className="btn btn-outline-success" type="submit" style={{ padding: '0.375rem 0.75rem' }}>
+              <button className="btn btn-primary" type="submit">
                 <i data-feather="search"></i> Buscar
               </button>
             </form>

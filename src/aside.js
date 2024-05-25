@@ -8,7 +8,7 @@ const Aside = () => {
 
   return (
     <aside className="mt-5 ms-3">
-      <form>
+      <form className="aside-form">
         <div className="mb-3">
           <label htmlFor="inputUsername" className="form-label">
             <i data-feather="user" className="me-2"></i>

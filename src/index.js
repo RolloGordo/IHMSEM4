@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/single",
+    path: "/single/:id",
     element: (
       <StrictMode>
         <Header />

@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import feather from "feather-icons";
 
 const Main = () => {
+  useEffect(() => {
+    feather.replace();
+  }, []);
+
   return (
     <main className="mt-5 ms-md-3">
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -10,7 +16,9 @@ const Main = () => {
             <div className="carousel-caption d-none d-md-block">
               <h5>AWP Dragon Lore</h5>
               <p>Una de las skins más icónicas y caras de CS:GO.</p>
-              <Link to="/single" className="btn btn-primary">Ver Detalle</Link>
+              <Link to="/single/1" className="btn btn-primary">
+                Ver Detalle <i data-feather="arrow-right" className="ms-2"></i>
+              </Link>
             </div>
           </div>
           <div className="carousel-item">
@@ -18,7 +26,9 @@ const Main = () => {
             <div className="carousel-caption d-none d-md-block">
               <h5>Karambit</h5>
               <p>Las cuchillas Karambit son muy valoradas por su estilo único y su rareza.</p>
-              <Link to="/single" className="btn btn-primary">Ver Detalle</Link>
+              <Link to="/single/2" className="btn btn-primary">
+                Ver Detalle <i data-feather="arrow-right" className="ms-2"></i>
+              </Link>
             </div>
           </div>
           <div className="carousel-item">
@@ -26,7 +36,9 @@ const Main = () => {
             <div className="carousel-caption d-none d-md-block">
               <h5>Guantes Rosados</h5>
               <p>Estos guantes son muy codiciados por su diseño llamativo y raro.</p>
-              <Link to="/single" className="btn btn-primary">Ver Detalle</Link>
+              <Link to="/single/3" className="btn btn-primary">
+                Ver Detalle <i data-feather="arrow-right" className="ms-2"></i>
+              </Link>
             </div>
           </div>
         </div>
