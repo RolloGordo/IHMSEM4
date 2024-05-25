@@ -10,10 +10,13 @@
   "author": "Fabrizzio Silva",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "bootstrap": "^5.3.3",
     "feather-icons": "^4.29.2",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1"
   },
   "browserslist": {
