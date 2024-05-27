@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       <StrictMode>
         <div id="root">
           <Header />
-          <div className="container-fluid">
+          <div className="container my-5">
             <div className="row">
               <div className="col-md-8">
                 <Main />

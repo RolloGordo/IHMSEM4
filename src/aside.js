@@ -9,6 +9,10 @@ const Aside = () => {
   return (
     <aside className="mt-5 ms-3">
       <form className="aside-form">
+        <div className="mb-3 text-center">
+          <h4>Bienvenido</h4>
+          <p>¿No tienes cuenta? ¡Regístrate para unirte a CSGO.SKINS!</p>
+        </div>
         <div className="mb-3">
           <label htmlFor="inputUsername" className="form-label">
             <i data-feather="user" className="me-2"></i>

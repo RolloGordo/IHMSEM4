@@ -5,6 +5,7 @@
   --background-color: #f8f9fa;    /* Gris claro */
   --text-color: #000000;          /* Negro */
   --neutral-color: #808080;       /* Gris */
+  --header-link-color: #ffffff;   /* Blanco */
 }
 
 html, body {
@@ -39,6 +40,10 @@ html, body {
 
 .navbar-brand i {
   margin-right: 0.5rem;
+}
+
+.nav-link {
+  color: var(--header-link-color) !important;
 }
 
 .btn-primary {
